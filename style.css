@@ -1,0 +1,39 @@
+body {
+    background-color: #37474f;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calories-cal {
+    width: 100%;
+    max-width: 700px;
+    padding: 60px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+.calories-cal input {
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+#resultcal {
+    color: aliceblue;
+    padding-top: 0.5rem;
+}
+
+.left-data {
+    background-color: #37474f;
+    opacity: 0.9;
+    text-align: center;
+    height: 100%;
+}
+
