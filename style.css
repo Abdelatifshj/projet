@@ -1,5 +1,5 @@
 body {
-    background: url(3.jpeg);
+    background: url(5.webp);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -39,7 +39,7 @@ body {
 }
 
 .left-data {
-    background-color: rgb(3, 5, 26);
+    background-color: rgb(6, 41, 59); 
     opacity: 0.9;
     text-align: center;
     height: 100%;
