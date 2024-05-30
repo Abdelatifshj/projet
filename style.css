@@ -1,22 +1,22 @@
 body {
-    background: url(5.webp);
+    background-color: hsl(191, 75%, 26%);  
     height: 100vh;
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat ;
     background-position: center;
-    
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
 }
 
 .calories-cal {
@@ -31,6 +31,7 @@ body {
     background-color: white;
     border: none;
     color: black;
+    margin-bottom: 15px; 
 }
 
 #resultcal {
@@ -39,9 +40,108 @@ body {
 }
 
 .left-data {
-    background-color: rgb(6, 41, 59); 
+    background-color: hsl(191, 75%, 26%);
     opacity: 0.9;
     text-align: center;
     height: 100%;
+    padding: 20px; 
+}
+
+.primary-header {
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    background-color: hsl(191, 86%, 30%); 
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 40px; 
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px; 
+    font-size: 1rem;
+    font-weight: semi-bold;
+    margin: 0; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    padding: 0.5rem; 
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+    color: hsl(191, 86%, 50%);
+    border-bottom: 2px solid hsl(191, 86%, 50%); 
+}
+
+@media (max-width: 50em) {
+    .primary-navigation {
+        display: none;
+        position: fixed;
+        padding: 20px;
+        inset: 7rem 20px auto;
+        background: hwb(191 3% 63%);
+        border-radius: 10px;
+        z-index: 100;
+    }
+
+    .primary-header[data-overlay]::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primary-navigation[data-visible] {
+        display: block;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: fixed;
+        font-size: 1.5rem;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        cursor: pointer;
+        border: 0;
+        padding: 0.5rem;
+        color: hsl(191, 86%, 50%);
+        z-index: 10;
+    }
+}
+
+.btn {
+    margin-top: 15px; 
+    padding: 10px 20px; 
+}
+
+.logo img {
+    height: 40px; 
+    margin-right: 10px; 
 }
 
